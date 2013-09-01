@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Inside Milan</title>
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+    <script type="text/javascript" src="js/lib/jquery-ui-1.10.3.black-tie/js/jquery-1.9.1.js"></script>
+
+
+    <!-- start: CSS -->
+    <link rel="stylesheet" type="text/css" href="js/lib/jquery-ui-1.10.3.black-tie/css/black-tie/jquery-ui-1.10.3.custom.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/inside-milan.css"/>
+    <link rel="stylesheet" type="text/css" href="css/text-search.css"/>
+    <link rel="stylesheet" type="text/css" href="js/lib/jquery.bxslider/jquery.bxslider.css"/>
+    <!-- end: CSS -->
+
+
+    <script type="text/javascript" src="js/lib/jquery-ui-1.10.3.black-tie/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="js/lib/OpenLayers-2.13.1/OpenLayers.debug.js"></script>
+    <script type="text/javascript" src="js/lib/OpenLayersPlugins/LoadingPanel.js"></script>
+    <script type="text/javascript" src="js/lib/OpenLayersPlugins/DoubleScaleLine.js"></script>
+    <script type="text/javascript" src="js/lib/OpenLayersPlugins/ExtendedScale.js"></script>
+    <script type="text/javascript" src="js/lib/OpenLayersPlugins/ProgessBar.js"></script>
+    <script type="text/javascript" src="js/lib/OpenLayersPlugins/DragPopup.js"></script>
+
+    <script type="text/javascript" src="js/lib/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="js/lib/underscore/underscore.string-min.js"></script>
+    <script type="text/javascript"> _.mixin(_.str.exports())</script>
+
+    <script type="text/javascript" src="js/lib/d3/d3.min.js"></script>
+    <script type="text/javascript" src="js/lib/d3-cloud/d3.layout.cloud.js"></script>
+    <script src="js/lib/d3-simple-map/bower_components/topojson/topojson.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="js/lib/d3-simple-map/dist/simple-map-d3.css">
+
+    <script src="js/lib/d3-simple-map/dist/simple-map-d3.js" charset="utf-8"></script>
+
+
+    <!-- start_ Ajax-solr  -->
+    <script type="text/javascript" src="js/lib/ajax-solr/core/Core.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/core/AbstractManager.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/managers/Manager.jquery.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/core/AbstractWidget.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/core/AbstractFacetWidget.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/core/AbstractSpatialWidget.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/core/AbstractSpellcheckWidget.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/core/AbstractTextWidget.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/core/Parameter.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/core/ParameterStore.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/core/ParameterHashStore.js"></script>
+    <script type="text/javascript" src="js/lib/ajax-solr/widgets/jquery/PagerWidget.js"></script>
+    <!-- end_ Ajax solr -->
+
+    <!--<script type="text/javascript" src="js/solr/tagCloud.js"></script>-->
+    <script type="text/javascript" src="js/solr/autocomplete.js"></script>
+    <script type="text/javascript" src="js/solr/results.js"></script>
+
+    <!-- start: geographical search -->
+    <script type="text/javascript" src="js/geographical_search/map.js"></script>
+    <script type="text/javascript" src="js/geographical_search/map.zones.js"></script>
+    <script type="text/javascript" src="js/geographical_search/map.layers.js"></script>
+    <script type="text/javascript" src="js/geographical_search/main.js"></script>
+
+    <!-- start: test search -->
+    <script type="text/javascript" src="js/text_search/text_search.js"></script>
+    <script type="text/javascript" src="js/text_search/main_text_search.js"></script>
+    <script type="text/javascript" src="js/text_search/text_search.results.js"></script>
+
+    <script src="js/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+
+    <!-- start: client-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- end: client -->
+
+    <script type="text/javascript"> var head = document.getElementsByTagName("head")[0];
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = "http://useresponse.insidemilan.it/public/themes/default/assets/css/widget.css";
+      link.media = "all";
+      head.appendChild(link);
+    </script>
+
+    <!-- start: Google analytics-->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-43541419-1', 'insidemilan.it');
+      ga('send', 'pageview');
+    </script>
+    <!-- end: Google analitics -->
+
+  </head>
+  <body>
+
+    <div id="wrap-header">
+      <div id="header">
+        <div id="copyright">
+        <div id="footer">
+          <a target="_blank" href="https://twitter.com/InsideMilanApp" title="InsideMilanApp"><img src="images/twitter.png" alt="logo" /></a>
+          <a target="_blank" href="https://www.facebook.com/InsideMilanApp" title="InsideMilanApp"><img src="images/facebook.png" alt="logo" /></a>
+          <a target="_blank" href="https://github.com/dboz/InsideMilan" title="InsideMilanApp"><img src="images/github.png" alt="logo" /></a>
+        </div>
+      </div>
+        
+        <div id="container">
+          <div  id="logo">
+            <div>
+              <a href="#"><img src="images/logo.png" alt="logo" /></a>
+            </div>
+
+          </div>
+
+          <div id="header-menu">
+            <div id="content-query" class="ui-widget">
+              <div id="icon-sarch"><img src="images/search.png" alt="logo" /></div>
+              <label for="query"></label>
+              <input type="text" id="query" name="query" />
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+    
+
+    <div id="discovery">
+      <div id="discovery-button"></div>
+      <div id="discovery-content">
+        <div id="navigation-category">
+
+        </div>
+        <div id="pager"></div>
+        <div id="navigation-text-search"></div>
+        <div id="results-by-text-search">
+
+        </div>
+      </div>
+    </div>
+
+
+    <div id="navigation-left"></div>
+    <div id="navigation-botton">
+      <div id="mouse-position"></div>
+      <div id="extended-scale"></div>
+      <div id="double-scale-line"></div>
+      <div id="layers-overlay"></div>
+      
+      
+    </div>
+
+  </body>
+</html>
