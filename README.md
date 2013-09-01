@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Inside Milan
 
 ![Mou icon](http://www.insidemilan.it/images/logo.png)
