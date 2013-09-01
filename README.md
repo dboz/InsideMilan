@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Inside Milan
 
 ![Mou icon](http://www.insidemilan.it/images/logo.png)
@@ -22,3 +23,14 @@ Infine sono presenti anche il file di script per l'esecuzione su un server linux
 
 ###Client
 Il client si occupa di fornire l'interfaccia per l'utente finale, scritto interamente in javascritp. La basemap utilizzata è di openstreetmap.com . Sono stati utilizzati plugin esterni come ad esempio **ajax-solr** oppure **jquery**
+=======
+Inside Milan utlizza i datasets forniti dal portale dati.comune.milano.ii, di seguito la lista completa.
+
+ServiziAllaPersona, SomministrazioneInPiano, VenditaSedeFissa_EV-MG, 
+SomministrazioneFuoriPiano, StruttureAlberghiere, VenditaSedeFissa_EV, siti_openwifi2,AreeCani, Car, Ciclabili. ImpiantiSportivi, Piscine, AssociazioniCulturali, CentriAggregazioneGiovanile, Cinema, MuseiSpaziEspositivi, TeatriAuditorium
+BibliotecheArchivi, CentriAggregazioneMultifunzionale, Farmacie, Parchi, Bike, CentriCongressi, FerrovieStazioniMilano, ParkInterscambio
+
+L'applicativo è in grado di eseguire query in real-time su oltre 45000 record di metadati. E' possibile eseguire una ricerca di testo 
+libero e di applicare dei filtri per zona.
+
+>>>>>>> af62ed05e2877aebb75a60ed833e3cd4775523ca
